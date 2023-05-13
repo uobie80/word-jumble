@@ -6,7 +6,7 @@ from tkinter import messagebox
 
 root = Tk()
 root.title('Word Jumble')
-root.geometry("600x400")
+root.geometry("800x400")
 root.iconbitmap("./icon.ico")
 
 # Create label to display scrambled word
@@ -22,7 +22,7 @@ def startGame(event):
     """
      This function starts the timer countdown, and display the scrambled word
     """
-    if timeleft == 60:
+    if timeleft == 120:
         countdown()
         shuffler()
         scorelabel.config(text="Score: 0")
