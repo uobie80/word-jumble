@@ -17,7 +17,6 @@ myLabel.pack(pady=20)
 score = 0
 timeleft = 120
 
-
 def startGame(event):
     """
      This function starts the timer countdown, displays the scrambled word, updates the score, and informs
