@@ -29,7 +29,9 @@ Or
 The output of running the program should have the following form:
 
 ### Word Jumble
-![Program Output](./rpsls_program_output.png)
+![Program Output](./wj-01.png)
+
+![Program Output](./wj-02.png)
 
 ## Author
 Uchenna Obicheta: [GitHub Profile](https://github.com/uobie80)
