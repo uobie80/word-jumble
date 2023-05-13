@@ -20,7 +20,8 @@ timeleft = 120
 
 def startGame(event):
     """
-     This function starts the timer countdown, and display the scrambled word
+     This function starts the timer countdown, displays the scrambled word, updates the score, and informs
+     the player whether the reconstructed word is correct or incorrect
     """
     if timeleft == 120:
         countdown()
@@ -31,6 +32,9 @@ def startGame(event):
 
 
 def countdown():
+    """
+    This function decrements the timer and displays the time left.
+    """
     global timeleft
     if timeleft == 0:
         messagebox.showinfo(
@@ -79,6 +83,11 @@ def shuffler():
 
 
 def answer():
+    """
+     This function does the following: 
+      - Compares and determines if the randomly chosen word matches the reconstructed word.  
+      - Displays the next scrambled word.
+    """
     global score
     global timeleft
 
