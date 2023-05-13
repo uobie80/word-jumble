@@ -42,18 +42,27 @@ def countdown():
 
 
 def shuffler():
+    """
+    This function randomly picks the name of a country and scrambles the word.
+    """
+
+    # Clear text box
     eAnswer.delete(0, END)
     # ansLabel.config(text="")
+    # Clear label
     ansLabel.after(400, lambda: ansLabel.config(text=''))
 
     global word
+
     Countries = ['Egypt', 'Sudan', 'Oman', 'Yemen', 'Syria', 'Algeria', 'Qatar', 'Lebanon', 'Tunisia', 'Libya',
                  'Kuwait', 'Jordan', 'Iraq', 'France', 'Germany', 'Spain', 'China', 'India', 'Canada', 'Brazil',
                  'Italy', 'Poland', 'Sweden', 'Norway', 'Greece', 'Netherlands', 'Japan', 'Iran', 'Portugal', 'Mexico',
                  'Cuba', 'Argentina', 'Colombia', 'Nigeria', 'South Africa', 'Ghana', 'United States of America', 'Liberia',
                  'Uganda', 'Cameroon', 'Kenya', 'Algeria', 'Mali', 'Somalia', 'Zimbabwe', 'Sierra Leone', 'Congo',
                  'Central African Republic', 'Mauritania', 'Libya', 'Togo', 'Tunisia', 'Gabon', 'Guinea-Bissau', 'Equatorial Guinea',
-                 'Comoros', 'Seychelles', 'Djibouti', 'Sao Tome & Principe', 'Cabo Verde', 'Botswana']
+                 'Comoros', 'Seychelles', 'Djibouti', 'Sao Tome & Principe', 'Cabo Verde', 'Botswana', 'Benin', 'Rwanda', 'Chad', 'Senegal'
+                 'Burkina Faso', 'Morocco', 'Mozambique', 'Madagascar', 'Côte d\'Ivoire', 'Niger', 'Angola', 'Malawi', 'Ethiopia',
+                 'Tanzania', 'DR Congo']
 
     word = choice(Countries)
 
@@ -65,6 +74,7 @@ def shuffler():
     for letter in breakWord:
         shuffled += letter
 
+    # Display scrambled word
     myLabel.config(text=shuffled)
 
 
